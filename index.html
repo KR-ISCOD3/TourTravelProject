@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/logo-website.jpg"
+      type="image/x-icon"
+    />
+    <title>Cambodia-Travel.group</title>
+
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- link css -->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- other link -->
+    <link rel="stylesheet" href="cssanimation/cssanimation.min.css" />
+    <script src="cssanimation/letteranimation.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <!-- navbar -->
+      <nav class="navbar fixed-top" id="navbar">
+        <div class="container">
+          <button class="d-block d-lg-none btn border-0 shadow-none">
+            <i class="bi bi-person-circle text-light fs-4"></i>
+          </button>
+          <a href="#" class="navbar-brand moulpali-font fw-bold text-light">
+            ខ្មែរ-Tour
+          </a>
+          <button
+            class="d-block d-lg-none btn border-0 shadow-none"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasEnd"
+          >
+            <i class="bi bi-list text-light fs-4"></i>
+          </button>
+          <div class="d-none d-lg-block">
+            <ul class="nav list-unstyled">
+              <li>
+                <a href="#" class="nav-link text-light siemreap-font"
+                  >ទំព័រដើម</a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link text-light siemreap-font"
+                  >អំពីយើង</a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link text-light siemreap-font"
+                  >ទេសចរណ៍</a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link text-light siemreap-font"
+                  >ទំនាក់ទំនង</a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link text-light siemreap-font"
+                  >ជំនួយការ</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="d-none d-lg-block">
+            <ul class="nav list-unstyled">
+              <li class="access position-relative">
+                <a href="#" class="nav-link text-light siemreap-font px-2">
+                  <i class="bi bi-person-circle fs-4"></i>
+                </a>
+                <ul class="list-sign list-unstyled bg-body-secondary rounded-1">
+                  <li>
+                    <a href="" class="nav-link px-2 text-dark">Sign in</a>
+                  </li>
+                  <li>
+                    <a href="" class="nav-link px-2 text-dark">Sign out</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-light siemreap-font px-2"
+                  ><i class="bi bi-telephone-outbound-fill fs-4"></i
+                ></a>
+              </li>
+              <li class="px-3">
+                <button
+                  class="btn siemreap-font mt-2 bg-success text-light rounded-5"
+                >
+                  កក់សុំបុត្រ
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- offcanvas -->
+      <div class="offcanvas offcanvas-end" id="offcanvasEnd">
+        <div class="offcanvas-header border-bottom">
+          <a href="#" class="navbar-brand moulpali-font fw-bold text-dark">
+            ខ្មែរ-Tour
+          </a>
+          <button
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            data-bs-target="#offcanvasEnd"
+          ></button>
+        </div>
+        <div class="offcanvas-body p-0">
+          <div class="d-flex py-2 px-3 border-bottom">
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="nav-link my-2 text-dark siemreap-font"
+                    >ទំព័រដើម</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link my-2 text-dark siemreap-font"
+                    >អំពីយើង</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link my-2 text-dark siemreap-font"
+                    >ទេសចរណ៍</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="nav-link my-2 text-dark siemreap-font"
+                    >ជំនួយការ</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="nav-link my-2 text-dark siemreap-font"
+                    >ទំនាក់ទំនង</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-25 m-3">
+            <ul class="list-unstyled">
+              <li class="access position-relative">
+                <a
+                  href="#"
+                  class="nav-link siemreap-font px-2 bg-secondary py-2 rounded-3 text-light fw-bold"
+                >
+                  Access
+                </a>
+                <ul
+                  class="list-sign list-unstyled bg-body-secondary rounded-1 position-absolute"
+                >
+                  <li>
+                    <a href="" class="nav-link px-2 py-2 text-dark">Sign in</a>
+                  </li>
+                  <li>
+                    <a href="" class="nav-link px-2 py-2 text-dark">Sign out</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- main -->
+      <main>
+        <!-- hero -->
+        <div class="hero container-fluid p-0 position-relative">
+          <div
+            class="carousel slide h-100 position-relative"
+            data-bs-ride="carousel"
+          >
+            <div
+              class="w-100 p-3 position-absolute z-1 top-50 start-50 translate-middle text-center"
+            >
+              <p
+                class="py-3 text-light moul-font auto-type"
+                style="font-size: clamp(35px, 6vw, 60px); height: 80px"
+              ></p>
+              <p
+                class="m-0 text-light siemreap-font fs-4 col-lg-6 m-auto animate__animated animate__fadeInUp"
+                style="line-height: 50px"
+              >
+                បេតិកភណ្ឌដ៏អស្ចារ្យនៃប្រទេសកម្ពុជា កំពុងរង់ចាំការរុករករបស់អ្នក។
+                ចូលរួមក្នុងដំណើរកំសាន្តប្លែកៗមួយជាមួយនឹងការណែនាំពីអ្នកដឹកនាំទេសចរជំនាញ
+              </p>
+              <button
+                class="btn btn-success rounded-5 fs-5 px-4 py-2 siemreap-font mt-3 animate__animated animate__fadeInUp"
+              >
+                <i class="bi bi-airplane-fill me-2"></i>តោះយើង
+              </button>
+              <button
+                class="btn text-light rounded-5 fs-5 px-4 py-2 siemreap-font mt-3 animate__animated animate__fadeInUp"
+              >
+                ដើរលេងខ្លះទៅ...
+              </button>
+            </div>
+
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <img
+                  style="filter: brightness(60%)"
+                  src="https://www.hecktictravels.com/wp-content/uploads/2014/12/Angkor-Wat-Sunrise-FEATURE.jpg"
+                  class="d-block w-100 h-100 object-fit-cover img-transition"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item h-100">
+                <img
+                  style="filter: brightness(40%)"
+                  src="https://media.audleytravel.com/-/media/images/home/southeast-asia/cambodia/letterbox-images/new-istock/istock_000048281186_ta_prohm_cambodia.jpg?q=79&w=1920&h=685"
+                  class="d-block w-100 h-100 object-fit-cover img-transition"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item h-100">
+                <img
+                  style="filter: brightness(40%)"
+                  src="https://exploringkiwis.com/wp-content/uploads/2014/06/IMG_9915.jpg"
+                  class="d-block w-100 h-100 object-fit-cover img-transition"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second section -->
+
+        <div class="top-destination container-fluid p-0 position-relative pb-5">
+          <div class="blur position-absolute container-fluid"></div>
+          <!-- top destination content-->
+          <div class="container pt-5">
+            <!-- top destination text-->
+            <div class="col-lg-8 p-1 p-md-3" data-aos="fade-up">
+              <h3 class="moul-font">
+                កន្លែងទេសចរណ៍<span class="text-success">ពេញនិយម</span>
+              </h3>
+              <p class="siemreap-font mt-4 lh">
+                កម្ពុជា ជាប្រទេសមួយដែលសម្បូរទៅដោយកន្លែងទេសចរណ៍ដ៏អស្ចារ្យ
+                ដែលធ្វើឲ្យអ្នកទេសចរពីគ្រប់ទិសទី ចង់មកទស្សនា។ ប៉ុន្តែ
+                ប្រសិនបើអ្នកមានពេលវេលាមានកម្រិត
+                ហើយចង់ទៅទស្សនាកន្លែងល្អបំផុតនៅកម្ពុជា
+                ខ្ញុំសូមណែនាំកន្លែងទាំងនេះ៖
+              </p>
+            </div>
+
+            <!-- top destination card -->
+            <div
+              class="scroll-card d-flex justify-content-between overflow-x-scroll"
+            >
+              <div class="col-12 col-md-6 col-lg-4 p-3" data-aos="zoom-in" data-aos-delay="100">
+                <div
+                  class="card position-relative overflow-hidden transition border-0 hover-card mt-lg-2"
+                >
+                  <div class="image-card">
+                    <img
+                      class="w-100 h-100 object-fit-cover img-transition brightness"
+                      src="https://amber-holdings.com/wp-content/uploads/2020/03/Natural-Parks-Kampot.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-center position-absolute start-50 bottom-0 translate-middle-x w-100"
+                  >
+                    <span class="text-light siemreap-font"
+                      >ដំណើរកម្សាន្តទៅ</span
+                    >
+                    <h3 class="text-light moul-font my-3">ខេត្ត កំពត</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 p-3" data-aos="zoom-in" data-aos-delay="200">
+                <div
+                  class="card position-relative overflow-hidden transition border-0 hover-card mt-lg-4"
+                >
+                  <div class="image-card">
+                    <img
+                      class="w-100 h-100 object-fit-cover img-transition brightness"
+                      src="https://www.bakongvillage.com/wp-content/uploads/2023/05/shutterstock_1106886017.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-center position-absolute start-50 bottom-0 translate-middle-x w-100"
+                  >
+                    <span class="text-light siemreap-font"
+                      >ដំណើរកម្សាន្តទៅ</span
+                    >
+                    <h3 class="text-light moul-font my-3">ខេត្ត សៀមរាប</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 p-3" data-aos="zoom-in" data-aos-delay="300">
+                <div
+                  class="card position-relative overflow-hidden transition border-0 hover-card mt-lg-"
+                >
+                  <div class="image-card">
+                    <img
+                      class="w-100 h-100 object-fit-cover img-transition brightness"
+                      src="https://sudospaces.com/vietcenter/2021/01/sihanoukeville-beach-1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-center position-absolute start-50 bottom-0 translate-middle-x w-100"
+                  >
+                    <span class="text-light siemreap-font"
+                      >ដំណើរកម្សាន្តទៅ</span
+                    >
+                    <h3 class="text-light moul-font my-3">ខេត្ត ព្រះសីហនុ</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Why we choose us -->
+          <div class="container-fluid p-0">
+            <div class="container mt-5">
+              <div class="text-center p-5">
+                <h1 data-aos="fade-up">
+                  <a
+                    href="#"
+                    class="navbar-brand moulpali-font fw-bold text-dark"
+                  >
+                    ខ្មែរ-Tour
+                  </a>
+                </h1>
+              </div>
+              <div class="row m-0">
+                <div class="col-md-6 col-lg-4 my-2" data-aos="zoom-in" data-aos-delay="100">
+                  <div
+                    class="d-flex px-4 border rounded-2 border-secondary-subtle py-4 bg-light-subtle"
+                  >
+                    <div
+                      class="col-4 px-3 p-3 bg-info-subtle rounded-5 d-grid align-content-center"
+                    >
+                      <img
+                        src="img/tourism.png"
+                        class="w-100 object-fit-cover"
+                      />
+                    </div>
+                    <div class="col-8 px-3">
+                      <h3 class="mb-1 siemreap-font fw-bold">សុវត្ថិភាព</h3>
+                      <p class="m-0 text-limit">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Labore perspiciatis aperiam sapiente
+                        reprehenderit, pariatur eligendi architecto enim nisi.
+                        Expedita, qui!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2" data-aos="zoom-in" data-aos-delay="200">
+                  <div
+                    class="d-flex px-4 border rounded-2 border-secondary-subtle py-4 bg-light-subtle"
+                  >
+                    <div
+                      class="col-4 px-3 p-3 bg-success-subtle rounded-5 d-grid align-content-center"
+                    >
+                      <img
+                        src="img/price.png"
+                        class="w-100 object-fit-cover"
+                      />
+                    </div>
+                    <div class="col-8 px-3">
+                      <h3 class="mb-1 siemreap-font fw-bold">តម្លៃសមរម្យ</h3>
+                      <p class="m-0 text-limit">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Labore perspiciatis aperiam sapiente
+                        reprehenderit, pariatur eligendi architecto enim nisi.
+                        Expedita, qui!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2" data-aos="zoom-in" data-aos-delay="300">
+                  <div
+                    class="d-flex px-4 border rounded-2 border-secondary-subtle py-4 bg-light-subtle"
+                  >
+                    <div
+                      class="col-4 px-3 p-3 bg-danger-subtle rounded-5 d-grid align-content-center"
+                    >
+                      <img
+                        src="img/book.png"
+                        class="w-100 object-fit-cover"
+                      />
+                    </div>
+                    <div class="col-8 px-3">
+                      <h3 class="mb-1 siemreap-font fw-bold">ងាយស្រួលកក់</h3>
+                      <p class="m-0 text-limit">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Labore perspiciatis aperiam sapiente
+                        reprehenderit, pariatur eligendi architecto enim nisi.
+                        Expedita, qui!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2" data-aos="zoom-in" data-aos-delay="400">
+                  <div
+                    class="d-flex px-4 border rounded-2 border-secondary-subtle py-4 bg-light-subtle"
+                  >
+                    <div
+                      class="col-4 px-3 p-3 bg-warning-subtle rounded-5 d-grid align-content-center"
+                    >
+                      <img
+                        src="img/support.png"
+                        class="w-100 object-fit-cover"
+                      />
+                    </div>
+                    <div class="col-8 px-3">
+                      <h3 class="mb-1 siemreap-font fw-bold">បើក២៤ម៉ោង</h3>
+                      <p class="m-0 text-limit">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Labore perspiciatis aperiam sapiente
+                        reprehenderit, pariatur eligendi architecto enim nisi.
+                        Expedita, qui!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2" data-aos="zoom-in" data-aos-delay="500">
+                  <div
+                    class="d-flex px-4 border rounded-2 border-secondary-subtle py-4 bg-light-subtle"
+                  >
+                    <div
+                      class="col-4 px-3 p-3 bg-secondary-subtle rounded-5 d-grid align-content-center"
+                    >
+                      <img
+                        src="img/guidetour.png"
+                        class="w-100 object-fit-cover"
+                      />
+                    </div>
+                    <div class="col-8 px-3">
+                      <h3 class="mb-1 siemreap-font fw-bold">អ្នកណែនាំ</h3>
+                      <p class="m-0 text-limit">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Labore perspiciatis aperiam sapiente
+                        reprehenderit, pariatur eligendi architecto enim nisi.
+                        Expedita, qui!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2" data-aos="zoom-in" data-aos-delay="600">
+                  <div
+                    class="d-flex px-4 border rounded-2 border-secondary-subtle py-4 bg-light-subtle"
+                  >
+                    <div
+                      class="col-4 px-3 p-3 bg-primary-subtle rounded-5 d-grid align-content-center"
+                    >
+                      <img
+                        src="img/communit.png"
+                        class="w-100 object-fit-cover"
+                      />
+                    </div>
+                    <div class="col-8 px-3">
+                      <h3 class="mb-1 siemreap-font fw-bold">ទំនាក់ទំនង</h3>
+                      <p class="m-0 text-limit">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Labore perspiciatis aperiam sapiente
+                        reprehenderit, pariatur eligendi architecto enim nisi.
+                        Expedita, qui!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Place-in-Cambodia-content -->
+        <div class="place container-fluid p-0 position-relative pb-5">
+          <div class="blur-bg position-absolute">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path
+                fill="#fff"
+                fill-opacity="1"
+                d="M0,64L40,53.3C80,43,160,21,240,21.3C320,21,400,43,480,64C560,85,640,107,720,112C800,117,880,107,960,122.7C1040,139,1120,181,1200,181.3C1280,181,1360,139,1400,117.3L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+              ></path>
+            </svg>
+          </div>
+
+          <div
+            class="container-fluid position-relative z-2"
+            style="padding-top: 120px"
+          >
+            <div class="container p-0 mt-lg-5">
+              <div class="d-flex align-items-center mb-4 p-2"  data-aos="fade-up" data-aos-delay="100">
+                <img src="img/angkor-wat.png" alt="" width="50px" />
+                <h3 class="moul-font text-light ms-2 m-0 mt-2">
+                  <span class="text-warning">កន្លែងដើរលេង</span>ក្នុងស្រុក
+                </h3>
+              </div>
+              <div class="row m-0">
+                <div class="col-md-6 col-lg-4 my-3" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="card p-3 siemreap-font">
+                    <div
+                      class="image bg-secondary rounded-2 position-relative overflow-hidden"
+                    >
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Kampot_20110429-019.JPG" alt="" class="w-100 h-100 object-fit-cover" />
+                      <div
+                        class="category bg-success position-absolute top-0 py-1"
+                      >
+                        <span class="px-3 text-light">ល្បីល្បាញ</span>
+                      </div>
+                    </div>
+                    <div class="card-body p-0 mt-3">
+                      <div class="d-flex align-items-center text-success">
+                        <div class="col-6 d-flex align-items-center">
+                          <i class="bi bi-geo me-1"></i>
+                          <p class="m-0">ខេត្ត កំពត</p>
+                        </div>
+                        <div
+                          class="col-6 d-flex align-items-center justify-content-end"
+                        >
+                          <i class="bi bi-calendar-check me-1"></i>
+                          <p class="m-0">1 ម៉ោង</p>
+                        </div>
+                      </div>
+                      <h4 class="mt-2 text-limit-2-line fw-bold">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                      </h4>
+                      <div class="d-flex border-top pt-4">
+                        <div class="col-6">
+                          <p class="m-0">តម្លៃធ្វើដំណើរ៖</p>
+                          <h4 class="m-0 fw-bold text-success">$100.00</h4>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                          <div>
+                            <p class="m-0 text-end fw-bold">Rating:</p>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-3" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="card p-3 siemreap-font">
+                    <div
+                      class="image bg-secondary rounded-2 position-relative overflow-hidden"
+                    >
+                      <img src="https://s9.kh1.co/0e/0e6db0355443f94c73f65a92608fc8479ffe3ce2.jpg" alt="" class="w-100 h-100 object-fit-cover" />
+                      <div
+                        class="category bg-success position-absolute top-0 py-1"
+                      >
+                        <span class="px-3 text-light">ល្បីល្បាញ</span>
+                      </div>
+                    </div>
+                    <div class="card-body p-0 mt-3">
+                      <div class="d-flex align-items-center text-success">
+                        <div class="col-6 d-flex align-items-center">
+                          <i class="bi bi-geo me-1"></i>
+                          <p class="m-0">ខេត្ត ព្រះសុីហនុ</p>
+                        </div>
+                        <div
+                          class="col-6 d-flex align-items-center justify-content-end"
+                        >
+                          <i class="bi bi-calendar-check me-1"></i>
+                          <p class="m-0">1 ម៉ោង</p>
+                        </div>
+                      </div>
+                      <h4 class="mt-2 text-limit-2-line fw-bold">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                      </h4>
+                      <div class="d-flex border-top pt-4">
+                        <div class="col-6">
+                          <p class="m-0">តម្លៃធ្វើដំណើរ៖</p>
+                          <h4 class="m-0 fw-bold text-success">$100.00</h4>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                          <div>
+                            <p class="m-0 text-end fw-bold">Rating:</p>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-3" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="card p-3 siemreap-font">
+                    <div
+                      class="image bg-secondary rounded-2 position-relative overflow-hidden"
+                    >
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/D%27Angkor.jpg" alt="" class="w-100 h-100 object-fit-cover" />
+                      <div
+                        class="category bg-success position-absolute top-0 py-1"
+                      >
+                        <span class="px-3 text-light">ល្បីល្បាញ</span>
+                      </div>
+                    </div>
+                    <div class="card-body p-0 mt-3">
+                      <div class="d-flex align-items-center text-success">
+                        <div class="col-6 d-flex align-items-center">
+                          <i class="bi bi-geo me-1"></i>
+                          <p class="m-0">ខេត្ត សៀមរាប</p>
+                        </div>
+                        <div
+                          class="col-6 d-flex align-items-center justify-content-end"
+                        >
+                          <i class="bi bi-calendar-check me-1"></i>
+                          <p class="m-0">1 ម៉ោង</p>
+                        </div>
+                      </div>
+                      <h4 class="mt-2 text-limit-2-line fw-bold">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                      </h4>
+                      <div class="d-flex border-top pt-4">
+                        <div class="col-6">
+                          <p class="m-0">តម្លៃធ្វើដំណើរ៖</p>
+                          <h4 class="m-0 fw-bold text-success">$100.00</h4>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                          <div>
+                            <p class="m-0 text-end fw-bold">Rating:</p>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-3" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="card p-3 siemreap-font">
+                    <div
+                      class="image bg-secondary rounded-2 position-relative overflow-hidden"
+                    >
+                      <img src="https://media-cdn.tripadvisor.com/media/photo-s/18/62/d8/db/asurajourney.jpg" alt="" class="w-100 h-100 object-fit-cover" />
+                      <div
+                        class="category bg-success position-absolute top-0 py-1"
+                      >
+                        <span class="px-3 text-light">ល្បីល្បាញ</span>
+                      </div>
+                    </div>
+                    <div class="card-body p-0 mt-3">
+                      <div class="d-flex align-items-center text-success">
+                        <div class="col-6 d-flex align-items-center">
+                          <i class="bi bi-geo me-1"></i>
+                          <p class="m-0">ខេត្ត មណ្ឌលគិរី</p>
+                        </div>
+                        <div
+                          class="col-6 d-flex align-items-center justify-content-end"
+                        >
+                          <i class="bi bi-calendar-check me-1"></i>
+                          <p class="m-0">1 ម៉ោង</p>
+                        </div>
+                      </div>
+                      <h4 class="mt-2 text-limit-2-line fw-bold">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                      </h4>
+                      <div class="d-flex border-top pt-4">
+                        <div class="col-6">
+                          <p class="m-0">តម្លៃធ្វើដំណើរ៖</p>
+                          <h4 class="m-0 fw-bold text-success">$100.00</h4>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                          <div>
+                            <p class="m-0 text-end fw-bold">Rating:</p>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-3" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="card p-3 siemreap-font">
+                    <div
+                      class="image bg-secondary rounded-2 position-relative overflow-hidden"
+                    >
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Yak_Loum.jpg" alt="" class="w-100 h-100 object-fit-cover" />
+                      <div
+                        class="category bg-success position-absolute top-0 py-1"
+                      >
+                        <span class="px-3 text-light">ល្បីល្បាញ</span>
+                      </div>
+                    </div>
+                    <div class="card-body p-0 mt-3">
+                      <div class="d-flex align-items-center text-success">
+                        <div class="col-6 d-flex align-items-center">
+                          <i class="bi bi-geo me-1"></i>
+                          <p class="m-0">ខេត្ត រតនគិរី</p>
+                        </div>
+                        <div
+                          class="col-6 d-flex align-items-center justify-content-end"
+                        >
+                          <i class="bi bi-calendar-check me-1"></i>
+                          <p class="m-0">1 ម៉ោង</p>
+                        </div>
+                      </div>
+                      <h4 class="mt-2 text-limit-2-line fw-bold">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                      </h4>
+                      <div class="d-flex border-top pt-4">
+                        <div class="col-6">
+                          <p class="m-0">តម្លៃធ្វើដំណើរ៖</p>
+                          <h4 class="m-0 fw-bold text-success">$100.00</h4>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                          <div>
+                            <p class="m-0 text-end fw-bold">Rating:</p>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-3" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="card p-3 siemreap-font">
+                    <div
+                      class="image bg-secondary rounded-2 position-relative overflow-hidden"
+                    >
+                      <img src="https://demo.cambodia.gov.kh/wp-content/uploads/2021/06/%E1%9E%97%E1%9F%92%E1%9E%93%E1%9F%86%E1%9E%B1%E1%9E%9A%E1%9F%89%E1%9E%B6%E1%9E%9B%E1%9F%8B.jpg" alt="" class="w-100 h-100 object-fit-cover" />
+                      <div
+                        class="category bg-success position-absolute top-0 py-1"
+                      >
+                        <span class="px-3 text-light">ល្បីល្បាញ</span>
+                      </div>
+                    </div>
+                    <div class="card-body p-0 mt-3">
+                      <div class="d-flex align-items-center text-success">
+                        <div class="col-6 d-flex align-items-center">
+                          <i class="bi bi-geo me-1"></i>
+                          <p class="m-0">ខេត្ត កំពង់ស្ពឺ</p>
+                        </div>
+                        <div
+                          class="col-6 d-flex align-items-center justify-content-end"
+                        >
+                          <i class="bi bi-calendar-check me-1"></i>
+                          <p class="m-0">1 ម៉ោង</p>
+                        </div>
+                      </div>
+                      <h4 class="mt-2 text-limit-2-line fw-bold">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                      </h4>
+                      <div class="d-flex border-top pt-4">
+                        <div class="col-6">
+                          <p class="m-0">តម្លៃធ្វើដំណើរ៖</p>
+                          <h4 class="m-0 fw-bold text-success">$100.00</h4>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end">
+                          <div>
+                            <p class="m-0 text-end fw-bold">Rating:</p>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact-us -->
+        <div class="container-fluid p-0 contact"  data-aos="fade-up" data-aos-delay="100">
+          <div class="container py-5">
+            <div class="row m-0">
+              <div class="col-12 col-lg-6 p-3 p-md-5 text-dark">
+                <h3 class="siemreap-font">ផ្ញើរសារតាមអុីម៊ែល</h3>
+                <div class="">
+                  <form action="" class="d-flex border border-dark">
+                    <input
+                      type="text"
+                      class="form-control bg-transparent border-0 shadow-none text-dark"
+                      placeholder="Email address..."
+                    />
+                    <button class="btn bg-success text-light rounded-0 px-4">
+                      <i class="bi bi-send-fill"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer  data-aos="fade-up" data-aos-delay="100">
+        <div class="container-fluid p-0 bg-dark">
+          <div class="container p-0 p-md-5">
+            <div class="row m-0 p-0 p-lg-2">
+              <div class="col-12 col-md-6 p-4 p-md-0 d-flex">
+                <div class="col-6 p-2 siemreap-font">
+                  <a
+                    href="#"
+                    class="navbar-brand moulpali-font fw-bold text-light fs-2"
+                  >
+                    ខ្មែរ-Tour
+                  </a>
+                  <h3 class="mt-4 text-light">ចង់ដើរលេង...</h3>
+                  <button
+                    class="btn siemreap-font mt-2 bg-success text-light rounded-5"
+                  >
+                    កក់សុំបុត្រ
+                  </button>
+                </div>
+                <div class="col-6 p-2">
+                  <h4 class="text-light mb-2">Quick Link</h4>
+                  <ul class="list-unstyled">
+                    <li class="ps-2 py-1">
+                      <a href="#" class="nav-link text-light siemreap-font"
+                        >ទំព័រដើម</a
+                      >
+                    </li>
+                    <li class="ps-2 py-1">
+                      <a href="#" class="nav-link text-light siemreap-font"
+                        >អំពីយើង</a
+                      >
+                    </li>
+                    <li class="ps-2 py-1">
+                      <a href="#" class="nav-link text-light siemreap-font"
+                        >ទេសចរណ៍</a
+                      >
+                    </li>
+                    <li class="ps-2 py-1">
+                      <a href="#" class="nav-link text-light siemreap-font"
+                        >ទំនាក់ទំនង</a
+                      >
+                    </li>
+                    <li class="ps-2 py-1">
+                      <a href="#" class="nav-link text-light siemreap-font"
+                        >ជំនួយការ</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 p-4 p-md-0 d-flex">
+                <div class="col-6 p-2 siemreap-font">
+                  <h4 class="text-light mb-2">Contact-Us</h4>
+                  <ul class="list-unstyled">
+                    <li class="ps-2 py-1">
+                      <a href="#" class="nav-link text-light siemreap-font"
+                        ><i class="bi bi-facebook me-2"></i>Facebook</a
+                      >
+                    </li>
+                    <li class="ps-2 py-1">
+                      <a href="#" class="nav-link text-light siemreap-font"
+                        ><i class="bi bi-messenger me-2"></i>Messenger</a
+                      >
+                    </li>
+                    <li class="ps-2 py-1">
+                      <a href="#" class="nav-link text-light siemreap-font"
+                        ><i class="bi bi-whatsapp me-2"></i>Whats-app</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6 siemreap-font p-2">
+                  <h4 class="text-light mb-2 mt-1">ពួកយើងនៅទីនេះ</h4>
+                  <p class="text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptate, hic.
+                  </p>
+                  <h4 class="text-light mb-2 mt-1">Payment-Partner</h4>
+                  <img src="img/footer-bottom-img.png" alt="" width="240px">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container p-1 border-top d-flex justify-content-between">
+            <div class="col-6">
+              <p class="text-secondary">©Copyright 2024 BlackRise Theme | Design By @Smey</p>
+            </div>
+            <div class="col-6 text-end">
+              <p class="text-secondary">Privacy Policy Terms & Condition</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?fbclid=IwY2xjawFvBDRleHRuA2FlbQIxMAABHcgyfASCCBzD6YCxGoSTlzKWARxUWQrxBrue_OgMxa_ucCdCLg8ySOKs6Q_aem_VR0c_1bMsP_2g7TsE3VCrg"></script>
+  <script>
+
+    AOS.init(); 
+
+    var typed = new Typed(".auto-type", {
+      strings: ["សូមស្វាគមន៍", "មកកាន់ទឹកដីកម្ពុជា"],
+      typeSpeed: 130,
+      backSpeed: 80,
+      loop: true,
+    });
+
+    const navbar = document.getElementById("navbar");
+    navbar.style.padding = "24px 0 ";
+    window.onscroll = () => {
+      const scrollY = window.scrollY;
+      // console.log(scrollY);
+      if (scrollY > 60) {
+        navbar.style.boxShadow = "0px 3px 15px #1B1212";
+        navbar.style.backgroundColor = "#1B1212";
+        navbar.style.transition = "0.4s";
+        navbar.style.padding = "12px 0 ";
+      } else {
+        navbar.style.backgroundColor = "transparent";
+        navbar.style.boxShadow = "none";
+        navbar.style.padding = "24px 0 ";
+      }
+    };
+  </script>
+</html>
